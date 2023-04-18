@@ -1,0 +1,52 @@
+.cont-info{
+    .receive {
+        display: flex;
+        flex-direction: column;
+        width: 28.289375em;
+        gap: 2.5em;
+        .count{
+            display: flex;
+            flex-direction: column;
+            gap: 3em;
+            background-color: #eff0f5;
+            padding: 1em;
+            border-radius: 0.5em;
+            .check{
+                display: flex;
+                justify-content: space-between;
+                h2{
+                    color: #02295a;
+                }
+                p{
+                    color: #473dff;
+                    font-weight: 500;
+                }
+            }
+            .all-service{
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+                p{
+                    display: flex;
+                    justify-content: space-between;
+                    color: #9d9fac;
+                    span {
+                        font-weight: 500;
+                        color: #02295a;
+                    }
+                }
+            }
+        }
+        .total{
+            display: flex;
+            justify-content: space-between;
+            padding: 1em;
+            p{
+                color: #9d9fac;
+            }
+            h2 {
+                color: #473dff;
+            }
+        }
+    }
+}

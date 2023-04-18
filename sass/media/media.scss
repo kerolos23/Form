@@ -1,0 +1,22 @@
+@use "./helper/mixin" as *;
+
+
+@media (min-width: 280px) and (max-width: 1023px){
+    @include media();
+}
+
+@media (max-width: 575.98px){
+    @include body(15px);
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    @include body(19px);
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    @include body(20px);
+}
+
+@media (min-width: 992px) and (max-width: 1023.98px) {
+    @include body(23px);
+}

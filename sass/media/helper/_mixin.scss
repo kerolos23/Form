@@ -1,0 +1,92 @@
+@mixin body($body-font){
+    body {
+        font-size: $body-font;
+    }
+}
+@mixin media(){
+    .cont{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        margin: unset;
+        border-radius: unset;
+        filter: unset;
+        .cont-step {
+            width: 100%;
+            height: 10em;
+
+            .steps {
+                flex-direction: row;
+                justify-content: center;
+                align-items: flex-start;
+                padding: 1em;
+            }
+        }
+        .cont-info {
+            position: absolute;
+            background: #fff;
+            width: 95%;
+            height: 85%;
+            top: 12%;
+            left: 2.5%;
+            box-shadow: 1px 1px 10px black;
+            border-radius: 0.7em;
+            overflow: hidden;
+            .set-info{
+                height: 85%;
+                justify-content: center;
+                align-items: center;
+                .persnal{
+                    gap: 3em;
+                }
+                .select-plan {
+                    gap: 0.7em;
+                }
+                .all {
+                    padding: 1em;
+                    .titles {
+                        display: flex;
+                        flex-direction: column;
+                        width: 90%;
+                        gap: 0.3em;
+                        line-height: 1.4em;
+                    }
+                    form {
+                        width: 90%;
+                    }
+                    .choose {
+                        flex-direction: column;
+                        width: 90%;
+                        gap: 0.5em;
+                        .options {
+                            flex-direction: row;
+                            width: 100%;
+                            height: 4.852em;
+                            align-items: center;
+                        }
+                    }
+                    .receive{
+                        width: 90%;
+                    }
+                    .click {
+                        margin-top: 0em;
+                    }
+                }
+            }
+            .btn {
+                height: 15%;
+                padding: unset;
+                .next {
+                    right: 1em;
+                }
+            }
+            .thank {
+                .thk-title {
+                    width: 90%;
+                }
+            }
+        }
+    }
+}

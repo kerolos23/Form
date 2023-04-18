@@ -1,0 +1,52 @@
+.cont-info{
+    .add-ons{
+        justify-content: flex-end;
+        .more-serv{
+            .selected {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                gap: 1em;
+                height: calc((100% / 3) - 1em);
+                border: 1.5px solid #d6d9e6;
+                padding: 1em;
+                border-radius: 0.5em;
+                cursor: pointer;
+                transition: .7s ease;
+                -webkit-transition: .7s ease;
+                -moz-transition: .7s ease;
+                -ms-transition: .7s ease;
+                -o-transition: .7s ease;
+                &:hover {
+                border: 1.5px solid #473dff;
+                }
+                input {
+                    width: 1.2em;
+                    cursor: pointer;
+                }
+                p:first-of-type{
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 1em;
+                    font-weight: 900;
+                    width: 70%;
+                    gap: .2em;
+                    span{
+                        font-weight: 400;
+                        color: #9d9fac;
+                    }
+                }
+                p:last-of-type{
+                    font-size: .9em;
+                    font-weight: 500;
+                    color: #473dff;
+                }
+            }
+            .checked {
+                border: 1.5px solid #473dff;
+            }
+        }
+    }
+}
